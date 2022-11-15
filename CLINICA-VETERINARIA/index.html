@@ -1,0 +1,425 @@
+i<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Montserrat:wght@300&family=Poppins:wght@400;500&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+    
+    <style>
+      body{
+        font-family: 'Baloo 2', cursive;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Raleway', sans-serif;
+      }
+    </style>
+
+
+    <title>Doguinhos</title>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#menu">
+    <div id="topo" class="container">
+      <header
+        class="bg-light sticky-top d-flex flex-wrap justify-content-center py-3 mb-5 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <span class="text-primary fs-4 fw-bold">
+            <i class="mdi mdi-dog"></i> Doguinhos</span
+          >
+        </a>
+
+        <ul id="menu" class="nav nav-pills">
+          <div class="form-check form-switch ms-auto mt-2 me-5">
+            <label id="icone-toggle" class="form-check-label ms-3" for="lightSwitch">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+              </svg>
+                
+              <path
+                  d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                />
+              </svg>
+            </label>
+            <input class="form-check-input" type="checkbox" id="lightSwitch" />
+          </div>
+
+
+
+          <li class="nav-item">
+            <a href="#topo" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li class="nav-item"><a href="#precos" class="nav-link">Preços</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#contato" class="nav-link">Contatos</a></li>
+        </ul>
+      </header>
+
+      <section class="mb-5">
+        <div class="row text-center text-md-start">
+          <div class="col-md-6 mt-3">
+            <h2 class="mt-5 fs-5">Aqui o seu amigo é tratado com carinho</h2>
+            <h1 style="font-weight: 900" class="display-2 fw-bold">
+              Clínica Veterinária
+            </h1>
+            <p class="mt-3 text muted">
+              Nossa missão é oferecer cuidados orais especiais de alta qualidade
+              através da educação e compaixão, e atender às necessidades
+              exclusivas de seu animal de estimação e sua família em um ambiente
+              acolhedor, amigável e atencioso.
+            </p>
+
+            <a href="#" class="mt-5 w-50 p-4 btn btn-primary"
+              >Agendar Consulta
+              <i class="mdi mdi-arrow-right-thick"></i>
+            </a>
+          </div>
+
+          <div class="col-md-6">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              class="m-0 m-auto float-none float-md-end"
+              src="https://assets4.lottiefiles.com/packages/lf20_syqnfe7c.json"
+              background="transparent"
+              speed="1"
+              style="max-width: 70%"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="text-center pt-5 mt-5">
+        <div class="row pt-5 mt-5">
+          <div class="col-12">
+            <h2 class="display-5 fw-bold">Serviços Prestados</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mt-5">
+            <img
+              class="rounded-circle shadow border p-5"
+              src="img/vacinado.png"
+              alt="imgvacine"
+            />
+
+            <h2 class="mt-3">Vacinação</h2>
+            <p>
+              É sempre melhor prevenir do que remediar. Por isso as vacinas são
+              essenciais para a saúde dos nossos bichinhos. O melhor é que as
+              primeiras doses sejam dadas desde cedo, a partir dos 45 dias de
+              vida. O veterinário vai montar um calendário com as principais
+              vacinas, que deve ser seguido ao longo de toda a vida do pet,
+              incluindo as doses e reforços anuais.
+            </p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4 mt-5">
+            <img
+              class="rounded-circle shadow border p-5"
+              src="img/veterinario.png"
+              alt="imgvetery"
+            />
+
+            <h2 class="mt-3">Emergências</h2>
+            <p>
+              Veterinários para todos os tipos de tratamento intensivo com
+              sistema de monitorização contínua que admite pacientes
+              potencialmente graves.
+            </p>
+            <p><a class="mt-5 btn btn-secondary" href="#">View details »</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4 mt-5">
+            <img
+              src="img/x-ray.png"
+              alt="imgxray"
+              class="rounded-circle shadow border p-5"
+            />
+
+            <h2 class="mt-3">Exames</h2>
+            <p>
+              dentro da Medicina Veterinária, é um método de diagnóstico rápido,
+              eficiente e de baixo custo. Mesmo com o surgimento da tomografia,
+              da ressonância e do ultrassom, o exame radiológico, em algumas
+              situações, ainda é o método de escolha para orientar o veterinário
+              a chegar em um diagnóstico.
+            </p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+      </section>
+
+      <section id="precos" class="pt-5 mt-5">
+        <div class="pricing-header pt-5 mt-5 text-center">
+          <h2 class="display-5 pb-4 fw-bold">Planos</h2>
+          <p class="fs-5 mb-5 text-muted">
+            Comprando com o nosso cartão <b>Doguinhos Card</b>, você consegue as
+            melhores ofertas no nosso site e ainda ganha cashback nas consultas
+            e exames! 🤑
+          </p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div
+                class="card-header py-3 text-white bg-primary border-primary"
+              >
+                <h4 class="my-0 fw-normal">Slim</h4>
+              </div>
+              <div class="card-body bg-light">
+                <h1 class="card-title pricing-card-title">
+                  R$29,90<small class="text-muted fw-light">/Mensal</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>
+                    O plano conta cobertura para consultas, exames
+                    laboratoriais, e procedimentos ambulatoriais. Você pode ver
+                    a cobertura completa. <a href="#">Veja a cobertura</a>
+                  </li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">
+                  Contratar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div
+                class="card-header py-3 text-white bg-primary border-primary"
+              >
+                <h4 class="my-0 fw-normal">Advance</h4>
+              </div>
+              <div class="card-body bg-light">
+                <h1 class="card-title pricing-card-title">
+                  R$89,90<small class="text-muted fw-light">/Mensal</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>
+                    O plano conta cobertura para consultas, exames
+                    laboratoriais, e procedimentos ambulatoriais. Você pode ver
+                    a cobertura completa. <a href="#">Veja a cobertura</a>
+                  </li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">
+                  Contratar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div
+                class="card-header py-3 text-white bg-primary border-primary"
+              >
+                <h4 class="my-0 fw-normal">Platinum</h4>
+              </div>
+              <div class="card-body bg-light">
+                <h1 class="card-title pricing-card-title">
+                  R$180<small class="text-muted fw-light">/Mesal</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>
+                    O plano conta cobertura para consultas, exames
+                    laboratoriais, e procedimentos ambulatoriais. Você pode ver
+                    a cobertura completa. <a href="#">Veja a cobertura</a>
+                  </li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">
+                  Contratar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="py-5 mt-5">
+        <div class="row pt-5 mt-5">
+          <div class="col-12 text-center">
+            <h2 class="display-5 fw-bold">Perguntas frequentes</h2>
+          </div>
+        </div>
+
+        <div class="row mt-3 mb-5">
+          <div class="col-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button fs-5"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Onde posso levar meu peludinho para ser atendido?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="bg-light accordion-body fw-bold">
+                    Nas clínicas credenciadas Doguinho's pet ou na clínica que
+                    você já tem costume de levar o seu peludinho e usar a
+                    modalidade reembolso. Você pode acessar a tabela de
+                    reembolso
+                    <a href="#">AQUI</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed fs-5"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Qual período da carência dos procedimentos?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class=" bg-light accordion-body fw-bold">
+                    Para ver a cobertura completa clique <a href="#">AQUI</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed fs-5"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Onde posso ver a cobertura completa do plano do meu
+                    peludinho?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class=" bg-light accordion-body fw-bold">
+                    Antes de contratar o plano, a cobertura pode ser visualizada
+                    <a href="#">AQUI</a>. Após a contração do plano as
+                    coberturas estarão no nosso aplicativo <b>Doguinho's APP</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="pt-5 mt-5">
+        <div class="row pt-5 mt-5">
+          <div class="col-12 text-center">
+            <h2 class="display-5 fw-bold">Contato</h2>
+          </div>
+        </div>
+
+        <div class="row align-items-md-stretch text-center ">
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3">
+              <h4>Fale conosco</h4>
+              <p class="p-5">
+                <img
+                  class="mb-3"
+                  style="width: 25px"
+                  src="img/telefone.png"
+                  alt=""
+                />
+                <br />
+                Para capitais: <b>9999-8888</b> <br />
+                <br />
+                Para demais localidades:
+                <b>0800 999 9999</b> <br />
+                <br />
+                <i class="mdi mdi-email"> doguinhos2023@gmail.com</i>
+              </p>
+              <button class="mt-4 w-68 p-3 btn btn-success" type="button">
+                <i class="mdi mdi-whatsapp"></i>
+                Chamar no Whatsapp
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 m-0 m-auto">
+            <div class="h-100 p-5 bg-light border rounded-3">
+              <h4>Rua do Exemplo 1234, Centro - Cidade do Exemplo</h4>
+              
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.4069509482647!2d-38.51166328464696!3d-3.7210949441788497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748466aaaaaab%3A0x85ff40101d7dff1b!2sBeira%20Mar!5e0!3m2!1spt-BR!2sbr!4v1659801006366!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="py-5 mt-5 p-5 my-5">
+        <ul class="nav justify-content-center border-bottom mt-5 pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ir para o topo</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Email</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Trabalhe conosco</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted"> <i class="mdi mdi-dog"></i> Doguinhos Pet - Clínica</p>
+      </footer>
+
+
+
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/switch.js"></script>
+  </body>
+</html>
