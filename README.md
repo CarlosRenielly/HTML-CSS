@@ -1,2 +1,2 @@
 # HTML-CSS
- Estudando HTML e CSS com vários professores <3
+ Estudando HTML e CSS <3
